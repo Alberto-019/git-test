@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intento</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="logo"><i class="fas fa-code"></i> GARCÍA <i class="fas fa-terminal"></i></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#acerca">Acerca de nosotros</a></li>
+            <li><a href="galería.html">Nuestra galería</a></li>
+        </ul>
+    </nav>
+    
+    <header id="inicio" class="inicio">
+        <h1>Bienvenido a nuestro sitio web!</h1>
+        <p>Si estás aquí es porque probablemente no tienes nada que hacer así que descubre nuestros servicios y más.</p>
+        <a href="#servicios" class="botón">Descubrir más</a>
+    </header>
+
+    
+
+    <main>
+        <section id="servicios" class="servicios">
+            <h2>Nuestros servicios</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                <!--<img src="galería/atardecer.jpg" alt="">-->
+                    <h3>Creación de Memes Profesionales</h3>
+                    <p>¿Necesitas reírte? Creamos memes a tu medida, con humor de calidad dudosa</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Consultoría de Procastinación</h3>
+                    <p>Expertos en ayudarte a no hacer nada productivo...pero con estilo</p>
+                </div>
+                
+                <div class="tarjeta">
+                    <h3>Música Para Lavar los Trastes</h3>
+                    <p>Playlists personalizadas para cada tipo de plato sucio</p>
+                </div>
+            </div>
+            
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>Horóscopos Inventados</h3>
+                    <p>¿No te sabes tu signo? No importa, igual alimentaremos tu esquizofrenia</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Diseños de Excusas Personalizadas</h3>
+                    <p>"Mi perro se comió la tarea" ya no funciona, nosotros te ayudamos con excusas creativas.</p>
+                </div>
+                
+                <div class="tarjeta">
+                    <h3>Cursos Intensivos de Cómo no Hacer Nada</h3>
+                    <p>Nivel básico, intermedio y pro. ¡Incluye certificado inútil!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form action="/send_email" id="formulario-contacto" method="post">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="correo" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+        <!-- Contenedor para mensajes flash -->
+        <div id="mensajes-flash" class="mensajes-flash"></div>
+
+        <section id="acerca" class="acerca">
+            <h2>Acerca de nosotros</h2>
+            <p>Somos un equipo de una sola persona que no sabe bien qué está haciendo, pero que lo hace con mucho entusiasmo. Esta página no tiene un propósito claro, pero al menos tiene colores bonitos y un par de chistes malos. Si llegaste hasta aquí, probablemente tenías algo mejor que hacer... pero gracias por visitarnos 😎.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por <span class="nombre-estilizado">Alberto García</span></p>
+        <li>&copy; 2025. Todos los derechos reservados</li>
+    </footer>
+</body>
+</html>
