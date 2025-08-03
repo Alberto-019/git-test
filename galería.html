@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería Paginada</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="galería.css">
+</head>
+
+<body>
+    <header>
+        <div class="textos">
+            <span class="icon"><i class="fa-solid fa-images"></i></span>
+            <div>
+                <h1>Hola fotos!</h1>
+                <p class="intro">Tu rincón visual favorito, sin filtros (bueno, tal vez uno que otro).</p>
+            </div>
+        </div>
+        <img src="https://assets.teenvogue.com/photos/67b47ad49c096931849bd4b4/16:9/w_2560%2Cc_limit/02-httyd-dm-banner-1900x660-kr-f01-021125-67ac99e0cf3df-1.jpg"
+            alt="Imagen">
+    </header>
+
+    <section class="mensaje">
+        <h2>Bienvenido al archivo visual!</h2>
+        <p>Observa, admira y navega</p>
+        <p>¿Quieres saber quién tomó qué? Aquí se muestran los créditos de cada imagen.</p>
+    </section>
+
+    <main>
+
+        <div class="image-list"></div>
+
+        <template id="image-template">
+            <div class="imagen">
+                <img src="" alt="Imagen" />
+                <p class="info"></p>
+            </div>
+        </template>
+
+        <div class="botones">
+            <button id="prev" class="boton">Anterior</button>
+            <button id="next" class="boton">Siguiente</button>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightbox"
+            style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+            <span id="close-lightbox"
+                style="position:absolute; top:10px; right:20px; font-size:2rem; color:#ccc; cursor:pointer; z-index:1001;">✖</span>
+            <img id="lightbox-img" src="" style="max-width:90vw; max-height:90vh; border:5px solid #ccc; border-radius:10px;">
+            <button id="prev-lightbox"
+                style="position:absolute; left:20px; font-size:4rem; color:#ccc; background:none; border:none; cursor:pointer;">&#139;</button>
+            <button id="next-lightbox"
+                style="position:absolute; right:20px; font-size:4rem; color:#ccc; background:none; border:none; cursor:pointer;">&#155;</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="creador">Creado por <span>Alberto García</span></p>
+        <p class="derechos">&copy;Todos los derechos reservados</p>
+    </footer>
+
+    <script defer src="galería.js"></script>
+</body>
+
+</html>
