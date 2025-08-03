@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <title>Portafolio | Plantilla</title>
+</head>
+<body>
+
+    <main>
+        <aside>
+            <ul class="Links">
+                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+                    <p>Hogar</p>
+                </li>
+                <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+                    <p>Acerca de mí</p>
+                </li>
+                <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+                    <p>Servicios</p>
+                </li>
+                <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+                    <p>Galería</p>
+                </li>
+                <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
+                    <p>Contáctame</p>
+                </li>
+            </ul>
+        </aside>
+        <div class="swiper mySwiper">
+            <div class="SlideContainer swiper-wrapper">
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1>¡Hola! Soy <span class="stylized-name">Alberto</span>,</h1>
+                        <h2>Un <span class="proffesions">Desarrollador Web</span></h2>
+                        <p class="heroline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquid culpa
+                             sed quasi aspernatur minima consectetur, maxime temporibus velit fuga quos rerum non ipsam!</p>
+                        <div class="buttonGroup"><a href="https://wa.me/+527551368334"><button>Contrátame</button></a><button onclick="Navigate(4)">Contáctame</button></div>     
+                    </div>
+                    <div class="SideImg">
+                        <div class="top-right-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                        <img src="https://picsum.photos/id/538/200/200" alt="">
+                        <div class="bottom-left-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                    </div>
+                    <p class="slide-help">Desliza para la siguiente tarjeta <i class="fa-solid fa-chevron-right fa-shake"></i>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-us">
+                        <h1 class="heading">Sobre mí</h1>
+                        <h3 class="sub-heading">Soy Alberto, <span class="proffesions">Un Desarrollador Web en formación</span></h3>
+                        <p class="aboutme-details">
+                            Soy un estudiante apasionado por la tecnología y el desarrollo web. Me encanta aprender cosas nuevas y crear páginas interactivas con HTML, CSS, JavaScript.
+                        </p>
+                        <div class="about-me-divison">
+                            <div class="about-me-table">
+                                <li><span>Experiencia:</span> 1 año</li>
+                                <li><span>País:</span> México</li>
+                                <li><span>Disponibilidad:</span> 24/7</li>
+                                <li><span>Clientes satisfechos:</span> 4</li>
+                                <li><span>Edad:</span> 17</li>
+                                <li><span>Teléfono:</span> +52 755 136 8334</li>
+                                <li><span>Lenguaje usado:</span> HTML</li>
+                                <li><span>Título:</span> Carrera Técnica</li>
+                                <div class="buttonGroup"><a href="https://wa.me/+527551368334"><button>Contrátame</button></a><button onclick="Navigate(4)">Contáctame</button></div>
+                            </div>
+
+                            <div class="skill-bar">
+                                <li>
+                                    <p>HTML</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width: 99%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>CSS</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width: 80%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>JavaScript</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width: 55%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Python</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width: 40%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>C++</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width: 60%;"></div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="swiper-slide services">
+
+                        <h1 class="heading">Servicios</h1>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                            <h2>Diseño Web</h2>
+                            <p>Estos servicios son usados solamente como ejemplo</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                            <h2>Desarrollo Web</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, assumenda</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <h2>Posicionamiento Web</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusamus similique</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-image"></i></div>
+                            <h2>Diseñador Gráfico</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias iusto cupiditatet</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <h2>Desarrollador de Software</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptatum,</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                            <h2>Administrador de BD</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eaque facere</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery">
+                        <h1 class="heading">Galería</h1>
+                        <div class="project"><a href="página1.html" target="_blank"><img src="página1.jpg" alt=""></a></div>
+                        <div class="project"><a href="página2.html" target="_blank"><img src="página2.jpg" alt=""></a></div>
+                        <div class="project"><a href="https://servitech-beige.vercel.app/" target="_blank"><img src="Servitech.jpg" alt=""></a></div>
+                        <div class="project"><a href="galería.html" target="_blank"><img src="galería.jpg" alt=""></a></div>
+                        <div class="project"><img src="https://picsum.photos/200/300?random=5" alt=""></div>
+                        <div class="project"><img src="https://picsum.photos/200/300?random=6" alt=""></div>
+                    </div>
+                    <div class="swiper-slide contactMe" id="contactMe">
+                        <h1 class="heading">Contáctame</h1>
+                        <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+                            <h3>No. de teléfono</h3>
+                            <p>+52 755 136 8334</p>
+                        </div>
+                        <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
+                            <h3>Ubicación</h3>
+                            <p>Zihuatanejo, Gro, Mx.</p>
+                        </div>
+                        <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
+                            <h3>Correo Electrónico</h3>
+                            <p>albergava015@gmail.com</p>
+                        </div>
+                        <div class="contactinfo"><i class="fa-solid fa-globe"></i>
+                            <h3>Sitio Web</h3>
+                            <a href="https://servitech-beige.vercel.app/" target="_blank">ServiTech Zihuatanejo</a>
+                        </div>
+                        <form action="https://formsubmit.co/albergava019@gmail.com" method="POST">
+                            <h2>Envíame un mensaje 
+                                <div class="SocialLinks">
+                                    <a href="https://wa.me/+527551368334"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://www.instagram.com/albertogava19?igsh=MW42dXdpcG5zOGYzNg=="><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://x.com/Labern_x?t=M_49p5bxipE6KN7idK3UZA&s=08 "><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/share/1DpWhdrSKW/"><i class="fa-brands fa-facebook"></i></a>                                   
+                                </div>
+                            </h2>
+                            <input type="text" name="Nombre" placeholder="Nombre" required>
+                            <input type="email" name="Email" placeholder="Correo Electrónico" required>
+                            <textarea rows="8" name="Mensaje" placeholder="Déjame un mensaje..." required></textarea>
+
+                            <input type="hidden" name="_captcha" value="false" />
+                            <input type="hidden" name="_next" value="https://git-test-woad.vercel.app/gracias.html" />
+
+                            <button class="primary">Enviar</button>
+                        </form>
+                    </div>
+                    <footer>
+                        <li>&copy; 2025 Todos los derechos reservados</li>
+                    </footer>
+            </div>
+        </div>
+    </main> 
+
+    <script defer src="main.js"></script>
+</body>
+</html>

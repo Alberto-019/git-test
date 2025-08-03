@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1 | DW</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="página1.css">
+  <script defer src="página1.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">García</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#acerca">ACERCA DE NOSOTROS</a></li>
+            <li><a href="login1.html">INICIAR SESIÓN</a></li>
+        </ul>
+        <button class="burger">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <header id="inicio" class="hero-section">
+        <h1>Bienvenido a Nuestra Página Web</h1>
+        <p>Descubre nuestros servicios y más.</p>
+        <a href="#servicios" class="btn-primary">Descubrir Más</a>
+    </header>
+
+    <main>
+        <section id="servicios" class="cards-container">
+            <h2>Nuestros Servicios</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Servicio 1</h3>
+                    <p>Descripción breve de este servicio.</p>
+                </div>
+                <div class="card">
+                    <h3>Servicio 2</h3>
+                    <p>Breve descrpción del servicio.</p>
+                </div>
+                <div class="card">
+                    <h3>Servicio 3</h3>
+                    <p>Breve descripción del servicio.</p>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="contacto" class="contact-section">
+            <h2>Contacto</h2>
+            <form id="contact-form" method="POST" action="/send_email">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="correo" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        
+        <!-- Contenedor para mensajes flash -->
+        <div id="flash-messages" class="flash-messages"></div>
+
+        <section id="acerca" class="about-section">
+            <h2>Acerca de nosotros</h2>
+            <p>Somos una empresa dedicada a brindar las mejores soluciones para ti.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
